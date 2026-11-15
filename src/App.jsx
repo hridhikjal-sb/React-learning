@@ -8,6 +8,8 @@ import { Prop } from './prop'
 import { Use } from './UpdateProps'
 import LoginForm from './login'
 import EmployeeCounter from './empcount'
+import { IncreaseButton } from './increasebutton'
+import { ShowPassword } from './showpaasword'
 
 
 const Button =()=>{
@@ -17,6 +19,8 @@ const Button =()=>{
 const App=()=>{
     const [showForm, setShowForm] = useState(true);
 return <div>
+  <ShowPassword/>
+  <IncreaseButton/>
   <EmployeeCounter/>
               <button onClick={() => setShowForm(!showForm)}>
                 Toggle Form
