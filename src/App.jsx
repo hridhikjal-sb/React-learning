@@ -9,8 +9,11 @@ import { Use } from './UpdateProps'
 import LoginForm from './login'
 import EmployeeCounter from './empcount'
 import { IncreaseButton } from './increasebutton'
-import { ShowPassword } from './showpaasword'
-
+import { ShowPassword } from './showpassword'
+import CharacterCounter from './chara'
+import { UserDetail } from './userdetail'
+import { Menuitem } from './menuitem'
+import { Menu } from './menu'
 
 const Button =()=>{
   return <button>click</button>
@@ -19,6 +22,10 @@ const Button =()=>{
 const App=()=>{
     const [showForm, setShowForm] = useState(true);
 return <div>
+   <Menu/>
+  <UserDetail username="John Doe" isOnline={true} role="admin" />
+  <UserDetail username="Jane Smith" isOnline={false} role="user" />
+  <CharacterCounter/>
   <ShowPassword/>
   <IncreaseButton/>
   <EmployeeCounter/>
