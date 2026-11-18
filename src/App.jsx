@@ -14,7 +14,7 @@ import CharacterCounter from './chara'
 import { UserDetail } from './userdetail'
 import { Menuitem } from './menuitem'
 import { Menu } from './menu'
-
+import { Employee } from './employee'
 const Button =()=>{
   return <button>click</button>
 }
@@ -22,6 +22,7 @@ const Button =()=>{
 const App=()=>{
     const [showForm, setShowForm] = useState(true);
 return <div>
+  <Employee/>
    <Menu/>
   <UserDetail username="John Doe" isOnline={true} role="admin" />
   <UserDetail username="Jane Smith" isOnline={false} role="user" />
