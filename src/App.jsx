@@ -15,6 +15,9 @@ import { UserDetail } from './userdetail'
 import { Menuitem } from './menuitem'
 import { Menu } from './menu'
 import { Employee } from './employee'
+import { useEffect } from 'react'
+import { Form } from './form'
+
 const Button =()=>{
   return <button>click</button>
 }
@@ -22,6 +25,7 @@ const Button =()=>{
 const App=()=>{
     const [showForm, setShowForm] = useState(true);
 return <div>
+  <Form/>
   <Employee/>
    <Menu/>
   <UserDetail username="John Doe" isOnline={true} role="admin" />
